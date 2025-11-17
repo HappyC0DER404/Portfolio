@@ -8,11 +8,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <style>
-    .Projects{
-        color: rgb(95, 202, 95);
-    }
-    .Contacts{
-        color: red;
+   
+   
+    .nav-item , .nav-link{
+      color: white;
     }
 </style>
   </head>
@@ -20,7 +19,7 @@
   <body>
     
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Moksh</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,17 +28,35 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">
+            
+<svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg> &nbsp; Home
+           </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./projects.html">
             <svg class="Projects" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
   <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
 </svg> &nbsp; Projects
           </a>
+
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="./profile.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg> &nbsp;
+          Profile
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">
            <svg class="Contacts" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg> Contact
+</svg> &nbsp; Contact
           </a>
         </li>
        
@@ -47,17 +64,140 @@
   </div>
 </nav>
 
-<h3>Moksh Shenoy</h3>
-<p>Hello! My name is Moksh and I have a younger sister named Swaaha. I am eleven years old and I am in sixth grade. I like math and geography. Tennis is one of my favorite sports to play. My favorite coding teacher, Parag, has been very helpful in teaching me to code. </p>
+<!-- Hero Section -->
+ <section class="text-center bg-light py-5">
+  <h1 class="fw-bold"> Hi! I'm <span class="text-primary">Moksh Shenoy</span>👋 </h1>
+  <p class="lead">I’m learning Web Development through fun games & projects! 🎮💻</p>
+  <img width="120px" src="./Passport.png" alt="student" class="rounded-circle shadow">
+ </section>
 
-<h3>My Hobbies</h3>
-<ol>
-    <li>Playing</li>
-    <li>Football</li>
-    <li>Chess</li>
-    <li>Tennis</li>
+ <!-- Skills -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Skills I have learned 🧠</h2>
+    <div class="d-flex justify-content-center gap-3">
+      <span class="badge bg-danger p-3 fs-5">HTML</span>
+      <span class="badge bg-primary p-3 fs-5">CSS</span>
+      <span class="badge bg-warning p-3 fs-5">JavaScript</span>
+      <span class="badge bg-dark p-3 fs-5">Debugging</span>
+      <span class="badge bg-success p-3 fs-5">Teamwork</span>
+    
+    </div>
+  </section>
+  <!-- Learning -->
 
-</ol>
+  <section class="container py-5">
+    <h2 class="text-center mb-4">My learning journey 📘</h2>
+<ul class="list-group">
+  <li class="list-group-item">✅ Learned basic HTML tags</li>
+  <li class="list-group-item">✅ Created my first webpage</li>
+  <li class="list-group-item">✅ Styled websites using CSS</li>
+  <li class="list-group-item">✅ Built interactive buttons using JavaScript</li>
+  <li class="list-group-item">✅ Made mini games like Rock-Paper-Scissors 🎮</li>
+</ul>
+  </section>
+
+<!-- Projects -->
+<section>
+  <h2 class="text-center mb-4">Recent Projects 🚀</h2>
+  <div class="row g-4">
+
+    <div class="col-md-4">
+<div class="card shadow p-3">
+    <img src="./Balloon Pop.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Balloon Pop</h5>
+      <p class="card-text">Click on the balloons to pop them.</p>
+      
+<a class="btn btn-primary" href="https://happyc0der404.github.io/Balloon_Pop/" role="button">Link</a>
+ 
+    </div>
+  </div>
+    </div>
+  
+
+    <div class="col-md-4">
+      <div class="card shadow p-3">
+    <img src="./Coin Flip.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Coin Flip</h5>
+      <p class="card-text">Click the button to flip the coin!</p>
+      <a class="btn btn-primary" href="https://happyc0der404.github.io/FlipTheCoin/" role="button">Link</a>
+    </div>
+  </div></div>
+  
+
+<div class="col-md-4"> 
+   <div class="card shadow p-3">
+    <img src="./Guess The Number.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Guess the Number</h5>
+      <p class="card-text">Guess the number between 1 and 10.</p>
+      <a class="btn btn-primary" href="https://happyc0der404.github.io/GuessTheNumber/" role="button">Link</a>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</section>
+
+
+<section class="text-center mb-4 py-5 ">
+  <a  href="./projects.html">
+    
+    <button type="button" class="btn btn-outline-primary" >See all projects</button>
+  </a>
+  
+  </section>
+
+
+<!-- Parents -->
+<!-- <section class="text-center py-5">
+<h2>What Parents Say ❤️</h2>
+<div class="card-group g-4">
+  <div class="col-md-4">
+ <div class="card p-3 shadow">
+  
+    <div class="card-body">
+   
+      <p class="card-text">"My child started loving coding because its taught in a fun way!"</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  </div>
+ 
+
+  <div class="card">
+  
+    <div class="card-body">
+      
+      <p class="card-text">"We see a big boost in creativity and problem solving!"</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+    
+      <p class="card-text">"Best decision to enroll! Highly recommended."</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+
+
+</section> -->
+
+<footer class="text-center py-3 bg-primary text-white">
+  © 2025 LuddyBuddy Classes | Learning is Fun 🎉
+</footer>
+
+
+
+
 
 
 
